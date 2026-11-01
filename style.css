@@ -1,7 +1,14 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #242424;
-  background: #fff;
+  color: #f3effa;
+  background: #17131f;
+  --surface: #211b2c;
+  --surface-soft: #2b2439;
+  --border: #403650;
+  --text-muted: #b7aec5;
+  --purple: #c1a8ff;
+  --green: #94d9b3;
+  --red: #f09aa8;
 }
 
 * {
@@ -12,7 +19,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: #fff;
+  background: #17131f;
 }
 
 button,
@@ -24,7 +31,7 @@ button:focus-visible,
 input:focus-visible,
 summary:focus-visible,
 a:focus-visible {
-  outline: 3px solid #4169a1;
+  outline: 3px solid var(--purple);
   outline-offset: 3px;
 }
 
@@ -38,29 +45,21 @@ a:focus-visible {
   padding: 40px 0 24px;
 }
 
-.eyebrow {
-  margin: 0;
-  color: #667085;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .08em;
-}
-
 .intro h1 {
   margin: 10px 0;
-  color: #263248;
+  color: #f5f1fb;
   font-size: clamp(36px, 6vw, 54px);
   line-height: 1;
 }
 
 .intro h1 span {
-  color: #a56d29;
+  color: var(--purple);
 }
 
 .intro-copy {
   max-width: 570px;
   margin: 0;
-  color: #596273;
+  color: var(--text-muted);
   font-size: 15px;
   line-height: 1.6;
 }
@@ -82,16 +81,16 @@ a:focus-visible {
 .chat-card,
 .guide-card {
   overflow: hidden;
-  border: 1px solid #d9dce2;
-  border-radius: 6px;
-  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
 }
 
 .guardian-scene {
   display: grid;
   height: 145px;
   place-items: center;
-  background: #f0f2f5;
+  background: #302640;
 }
 
 .dragon {
@@ -119,11 +118,19 @@ a:focus-visible {
   gap: 12px;
 }
 
+.eyebrow {
+  margin: 0;
+  color: #b7a4d5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
 .guardian-title-row h2,
 .section-heading h2,
 .guide-card h2 {
   margin: 6px 0 0;
-  color: #263248;
+  color: #f3effa;
   font-size: 18px;
 }
 
@@ -131,42 +138,42 @@ a:focus-visible {
   flex: 0 0 auto;
   padding: 5px 8px;
   border-radius: 20px;
-  color: #46577a;
-  background: #edf0f5;
+  color: #d3c4f5;
+  background: #382e49;
   font-size: 11px;
 }
 
 .status-won {
-  color: #276344;
-  background: #e5f4eb;
+  color: var(--green);
+  background: #263d35;
 }
 
 .status-lost {
-  color: #943d47;
-  background: #f9e9eb;
+  color: var(--red);
+  background: #442b36;
 }
 
 .guardian-description {
   min-height: 38px;
   margin: 10px 0 18px;
-  color: #596273;
+  color: var(--text-muted);
   font-size: 13px;
   line-height: 1.5;
 }
 
 .trust-heading {
-  color: #384254;
+  color: #e3ddeb;
   font-size: 12px;
 }
 
 .trust-value {
-  color: #263248;
+  color: #f3effa;
   font-size: 14px;
   font-weight: 700;
 }
 
 .trust-value span {
-  color: #707887;
+  color: #b7aec5;
   font-size: 11px;
   font-weight: 400;
 }
@@ -176,7 +183,7 @@ a:focus-visible {
   margin-top: 9px;
   overflow: hidden;
   border-radius: 8px;
-  background: #e5e7eb;
+  background: #40364e;
 }
 
 .trust-fill {
@@ -184,7 +191,7 @@ a:focus-visible {
   width: 30%;
   height: 100%;
   border-radius: inherit;
-  background: #6787bd;
+  background: var(--purple);
   transition: width 250ms ease;
 }
 
@@ -192,7 +199,7 @@ a:focus-visible {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-  color: #737b89;
+  color: #aaa1b7;
   font-size: 10px;
 }
 
@@ -204,12 +211,12 @@ a:focus-visible {
 
 .section-heading {
   padding-bottom: 13px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
 }
 
 .message-count,
 .input-help {
-  color: #707887;
+  color: #b7aec5;
   font-size: 11px;
 }
 
@@ -238,7 +245,7 @@ a:focus-visible {
   height: 30px;
   flex: 0 0 30px;
   border-radius: 50%;
-  background: #edf0f5;
+  background: var(--surface-soft);
   font-size: 17px;
   place-items: center;
 }
@@ -250,14 +257,14 @@ a:focus-visible {
 .message-author {
   display: block;
   margin-bottom: 4px;
-  color: #596273;
+  color: #c9bddc;
   font-size: 11px;
   font-weight: 700;
 }
 
 .message-body > p {
   margin: 0;
-  color: #303744;
+  color: #eee9f5;
   font-size: 13px;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -269,11 +276,11 @@ a:focus-visible {
   margin-top: 8px;
   padding: 9px;
   border-radius: 6px;
-  background: #f3f4f6;
+  background: #191521;
 }
 
 .analysis-title {
-  color: #596273;
+  color: #b7aec5;
   font-size: 10px;
 }
 
@@ -290,17 +297,17 @@ a:focus-visible {
 }
 
 .word-chip.positive {
-  color: #276344;
-  background: #e5f4eb;
+  color: var(--green);
+  background: #263d35;
 }
 
 .word-chip.negative {
-  color: #943d47;
-  background: #f9e9eb;
+  color: var(--red);
+  background: #442b36;
 }
 
 .score-label {
-  color: #46577a;
+  color: var(--purple);
   font-size: 11px;
   font-weight: 700;
 }
@@ -311,23 +318,23 @@ a:focus-visible {
 
 .restart-button {
   padding: 7px 10px;
-  border: 1px solid #aeb8c8;
+  border: 1px solid #625477;
   border-radius: 6px;
-  color: #34425a;
-  background: #f7f8fa;
+  color: #e2d7f5;
+  background: #302640;
   cursor: pointer;
   font-size: 12px;
 }
 
 .restart-button:hover {
-  background: #edf0f5;
+  background: #3a2f4d;
 }
 
 .message-form {
   display: flex;
   gap: 8px;
   padding-top: 12px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border);
 }
 
 .input-wrap {
@@ -339,28 +346,28 @@ a:focus-visible {
   width: 100%;
   height: 42px;
   padding: 0 52px 0 11px;
-  border: 1px solid #cfd4dc;
+  border: 1px solid #514660;
   border-radius: 6px;
-  color: #242424;
-  background: #fff;
+  color: #f3effa;
+  background: #191521;
   font-size: 13px;
 }
 
 .input-wrap input::placeholder {
-  color: #7a8290;
+  color: #aaa1b7;
 }
 
 .character-count {
   position: absolute;
   top: 50%;
   right: 9px;
-  color: #707887;
+  color: #aaa1b7;
   font-size: 10px;
   transform: translateY(-50%);
 }
 
 .character-count.near-limit {
-  color: #a35b22;
+  color: #f3c183;
 }
 
 .send-button {
@@ -371,15 +378,15 @@ a:focus-visible {
   gap: 7px;
   border: 0;
   border-radius: 6px;
-  color: #fff;
-  background: #465f8b;
+  color: #21192c;
+  background: var(--purple);
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
 }
 
 .send-button:hover:not(:disabled) {
-  background: #354c75;
+  background: #d0bdff;
 }
 
 .send-button:disabled {
@@ -394,7 +401,7 @@ a:focus-visible {
 
 .form-error {
   margin: 8px 0 0;
-  color: #943d47;
+  color: #ffb0bc;
   font-size: 12px;
 }
 
@@ -409,7 +416,7 @@ a:focus-visible {
 .steps-list {
   display: grid;
   gap: 12px;
-  margin: 15px 0;
+  margin: 15px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -421,31 +428,21 @@ a:focus-visible {
 }
 
 .steps-list li > span {
-  color: #465f8b;
+  color: var(--purple);
   font-size: 11px;
   font-weight: 700;
 }
 
 .steps-list p {
   margin: 0;
-  color: #444c5a;
+  color: #e1dbe9;
   font-size: 12px;
-  line-height: 1.5;
-}
-
-.tip {
-  margin: 0;
-  padding: 10px;
-  border-left: 3px solid #c28a44;
-  color: #554932;
-  background: #fbf7ef;
-  font-size: 11px;
   line-height: 1.5;
 }
 
 .model-card > p:not(.eyebrow) {
   margin: 10px 0 12px;
-  color: #596273;
+  color: var(--text-muted);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -456,8 +453,8 @@ a:focus-visible {
   gap: 8px;
   align-items: center;
   padding: 7px 0;
-  border-bottom: 1px solid #edf0f2;
-  color: #444c5a;
+  border-bottom: 1px solid #382f44;
+  color: #e1dbe9;
   font-size: 12px;
 }
 
@@ -468,19 +465,19 @@ a:focus-visible {
 }
 
 .legend-dot.positive {
-  background: #438d67;
+  background: var(--green);
 }
 
 .legend-dot.negative {
-  background: #bb5863;
+  background: var(--red);
 }
 
 .legend-dot.neutral {
-  background: #8d929c;
+  background: #aaa1b7;
 }
 
 .legend-score {
-  color: #596273;
+  color: #d1c6e0;
   font-size: 11px;
 }
 
@@ -491,19 +488,23 @@ a:focus-visible {
 
 .vocabulary {
   padding-top: 10px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border);
 }
 
 .vocabulary summary {
-  color: #344f7d;
+  color: var(--purple);
   cursor: pointer;
   font-size: 12px;
 }
 
 .vocabulary p {
   margin: 9px 0 0;
-  color: #596273;
+  color: var(--text-muted);
   font-size: 11px;
+}
+
+.vocabulary code {
+  color: var(--purple);
 }
 
 .sr-only {
@@ -557,7 +558,6 @@ a:focus-visible {
   .guide-column {
     grid-template-columns: 1fr;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {

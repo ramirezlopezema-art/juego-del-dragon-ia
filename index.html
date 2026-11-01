@@ -79,27 +79,23 @@
 
         <aside class="guide-column" aria-label="Guía de la aventura">
           <section class="guide-card how-to-card" aria-labelledby="how-to-heading">
-            <div class="guide-icon" aria-hidden="true">⌘</div>
-            <p class="eyebrow">CÓMO JUGAR</p>
-            <h2 id="how-to-heading">Tres pasos<br>para cruzar</h2>
+            <h2 id="how-to-heading">Cómo jugar</h2>
             <ol class="steps-list">
-              <li><span>01</span><p>Escribe un mensaje para el dragón.</p></li>
-              <li><span>02</span><p>Observa qué palabras reconoce el modelo.</p></li>
-              <li><span>03</span><p>Gana su confianza para conseguir la llave.</p></li>
+              <li><span>1</span><p>Escribe un mensaje.</p></li>
+              <li><span>2</span><p>Revisa las palabras detectadas.</p></li>
+              <li><span>3</span><p>Gana confianza y consigue la llave.</p></li>
             </ol>
-            <p class="tip"><span aria-hidden="true">✦</span> No hay una respuesta correcta: prueba distintas palabras y compara el resultado.</p>
           </section>
 
           <section class="guide-card model-card" aria-labelledby="model-heading">
-            <p class="eyebrow">DEBAJO DEL CAPÓ</p>
-            <h2 id="model-heading">Un modelo sencillo</h2>
-            <p>Este juego no entiende el lenguaje como una persona. Busca palabras en dos listas y suma una puntuación:</p>
+            <h2 id="model-heading">Puntuación</h2>
+            <p>El dragón compara tu mensaje con una lista:</p>
             <div class="legend-row"><span class="legend-dot positive"></span><span>Palabra amable</span><span class="legend-score">+1</span></div>
             <div class="legend-row"><span class="legend-dot negative"></span><span>Palabra hostil</span><span class="legend-score">−1</span></div>
             <div class="legend-row"><span class="legend-dot neutral"></span><span>Sin coincidencias</span><span class="legend-score">0</span></div>
-            <p class="model-note">La puntuación mueve la confianza. Un mensaje sin coincidencias baja 2 puntos. Es un ejemplo educativo, no una IA que comprende intenciones.</p>
+            <p class="model-note">Cada punto cambia la confianza en 3. Sin coincidencias, baja 2.</p>
             <details class="vocabulary">
-              <summary>Ver palabras de ejemplo</summary>
+              <summary>Ver ejemplos</summary>
               <p><strong>Amables:</strong> amable, gracias, amigo, ayudar, paz, genial.</p>
               <p><strong>Hostiles:</strong> odio, miedo, atacar, destruir, enemigo, peligro.</p>
               <p>Puedes ampliar las listas en <code>cerebro.js</code>.</p>
