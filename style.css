@@ -1,7 +1,7 @@
 :root {
   font-family: Arial, sans-serif;
   color: #242424;
-  background: #f3f4f6;
+  background: #fff;
 }
 
 * {
@@ -12,7 +12,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: #f3f4f6;
+  background: #fff;
 }
 
 button,
@@ -29,7 +29,7 @@ a:focus-visible {
 }
 
 .page-shell {
-  width: min(1050px, calc(100% - 32px));
+  width: min(980px, calc(100% - 32px));
   margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ a:focus-visible {
 .guide-card {
   overflow: hidden;
   border: 1px solid #d9dce2;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #fff;
 }
 
@@ -129,7 +129,7 @@ a:focus-visible {
   display: grid;
   height: 145px;
   place-items: center;
-  background: #e8edf4;
+  background: #f0f2f5;
 }
 
 .dragon {
