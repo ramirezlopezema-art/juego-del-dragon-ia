@@ -1,12 +1,12 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #f3effa;
-  background: #17131f;
-  --surface: #211b2c;
-  --surface-soft: #2b2439;
-  --border: #403650;
-  --text-muted: #b7aec5;
-  --purple: #c1a8ff;
+  color: #eeeaf4;
+  background: #100d16;
+  --surface: #19151f;
+  --surface-soft: #24202c;
+  --border: #302a39;
+  --text-muted: #aaa3b4;
+  --purple: #b99be8;
   --green: #94d9b3;
   --red: #f09aa8;
 }
@@ -19,7 +19,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: #17131f;
+  background: #100d16;
 }
 
 button,
@@ -36,18 +36,18 @@ a:focus-visible {
 }
 
 .page-shell {
-  width: min(980px, calc(100% - 32px));
+  width: min(940px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 .intro {
   max-width: 640px;
-  padding: 40px 0 24px;
+  padding: 32px 0 20px;
 }
 
 .intro h1 {
   margin: 10px 0;
-  color: #f5f1fb;
+  color: #eeeaf4;
   font-size: clamp(36px, 6vw, 54px);
   line-height: 1;
 }
@@ -60,41 +60,41 @@ a:focus-visible {
   max-width: 570px;
   margin: 0;
   color: var(--text-muted);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .game-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(260px, .85fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(250px, .8fr);
   align-items: start;
-  gap: 16px;
+  gap: 12px;
 }
 
 .game-column,
 .guide-column {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .guardian-card,
 .chat-card,
 .guide-card {
   overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 0;
+  border-radius: 4px;
   background: var(--surface);
 }
 
 .guardian-scene {
   display: grid;
-  height: 145px;
+  height: 105px;
   place-items: center;
-  background: #302640;
+  background: #1d1826;
 }
 
 .dragon {
-  font-size: 78px;
+  font-size: 62px;
 }
 
 .scene-star,
@@ -106,7 +106,7 @@ a:focus-visible {
 .guardian-content,
 .chat-card,
 .guide-card {
-  padding: 18px;
+  padding: 15px;
 }
 
 .guardian-title-row,
